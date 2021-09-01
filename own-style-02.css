@@ -1,0 +1,71 @@
+.container {
+  display: grid;
+  max-width: 700px;
+  height: 1200px;
+  margin: auto;
+  grid-gap: 5px;
+  grid-template-areas: "header header header header"
+                       "first second third fourth"
+                       "h2 h2 h2 h2"
+                       "left left right right"
+                       "footer footer footer footer";
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 50px 350px 100px;
+}
+
+header {
+  grid-area: header;
+  background-color: aqua;
+}
+
+h4 {
+  display: inline-block;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+
+.first {
+  grid-area: first;
+  background-color: cadetblue;
+}
+
+.second {
+  grid-area: second;
+  background-color: cornflowerblue;
+}
+
+.third {
+  grid-area: third;
+  background-color: darkgrey;
+}
+
+.fourth {
+  grid-area: fourth;
+  background-color: darkslategray;
+}
+
+main {
+  grid-area: main;
+  border: 1px red solid;
+  /* display: flex; */
+}
+
+section.left {
+  grid-area: left;
+  background-color: khaki;
+  border: 1px solid blue;
+}
+
+section.right {
+  grid-area: right;
+  background-color: khaki;
+  border: 1px solid blue;
+}
+
+footer {
+  grid-area: footer;
+  background-color: lightskyblue;
+}
