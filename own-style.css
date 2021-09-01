@@ -1,0 +1,31 @@
+.container {
+
+  display: grid;
+  max-width: 700px;
+  grid-gap: 10px;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-template-rows: 150px 400px 100px;
+}
+
+header,
+main,
+footer {
+  text-align: center;
+}
+
+
+header {
+  background-color: aqua;
+}
+
+main {
+  background-color: bisque;
+}
+
+footer {
+  background-color: aqua;
+}
